@@ -13,11 +13,11 @@ def check_internet():
 	ci.settimeout(3)
 	try:
 		ci.connect(('socket.io',80))
-		user=os.environ['USER']
+		user=os.environ['LOGNAME']
 		print(Fore.GREEN + "        User [ " + str(user) + " ] conectado a Internet [*]" + Fore.RESET)
 		ci.close()
 	except:
-		user=os.environ['USER']
+		user=os.environ['LOGNAME']
 		print(Fore.RED + "        User [ " + str(user) + " ] NO CONECTADO A INTERNET [!]" + Fore.RESET)
 		exit()
 def main():
